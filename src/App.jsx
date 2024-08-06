@@ -3,6 +3,7 @@ import './styles.css'
 
 import stockData from './data/stockData'
 import Stock from './components/Stock'
+import internal from 'stream'
 
 export default function App() {
   const [currentData, setCurrentData] = useState(stockData)
@@ -42,6 +43,8 @@ export default function App() {
         }))
       )
     }, 4000)
+    
+
   }, [])
 
   return (
